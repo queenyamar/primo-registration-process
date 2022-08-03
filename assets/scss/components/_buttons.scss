@@ -1,0 +1,55 @@
+/* ============================================================================
+** Buttons Styles
+==============================================================================*/
+
+.btn {
+    border-radius: 40px;
+    padding: 12px 24px;
+    font-family: $font-primary;
+    font-weight: 600;
+    border: 0;
+
+    &:hover,
+    &:focus {
+        color: $white;
+    }
+}
+
+.btn-blue {
+    color: $white;
+    background-color: $color-blue;
+
+    &:hover,
+    &:focus {
+        background-color: darken($color-blue, 5%);
+    }
+}
+
+.btn-green {
+    color: $white;
+    background-color: $color-green;
+
+    &:hover,
+    &:focus {
+        background-color: darken($color-green, 5%);
+    }
+}
+
+.btn-outline-white{
+    background-color: $white;
+    border: 1px solid $color-light-grey;
+    color: $color-grey;
+}
+
+.btn-outline-green {
+    background-color: $white;
+    border: 1px solid $color-green;
+    color: $color-green;
+
+    &:hover,
+    &:focus {
+        background-color: $color-green;
+        color: $white;
+        border-color: $color-green;
+    }
+}

@@ -1,0 +1,29 @@
+/* ============================================================================
+** HTML Defaults
+==============================================================================*/
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: $font-size-base; // this will affect all 'rem' and 'em' based units
+}
+
+body {
+	margin: 0 !important;
+  	padding: 0 !important;
+	color: $color-grey;
+	font-family: $font-secondary;
+	background-color: $color-light-blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-primary;
+}

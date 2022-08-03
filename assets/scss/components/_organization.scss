@@ -1,0 +1,68 @@
+/* ============================================================================
+** Organization Styles
+==============================================================================*/
+
+.organization {
+    background-color: $white;
+    border-radius: 16px;
+    padding: 3em 0;
+    margin: 0 1em;
+    
+    @include media-breakpoint-up(md) {
+        max-width: 978px;
+        padding: 56px 40px;
+        margin: auto 3em;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin: auto auto;
+    }
+
+    &__content {
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 400px;
+        }
+    }
+
+    &__title {
+        color: $color-blue;
+        font-weight: 600px;
+        margin-bottom: 1em;
+
+        @include media-breakpoint-up(md) {
+            font-size: 34px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 37px;
+        }
+    }
+
+    &__tools {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .btn-form {
+            background-color: $white;
+            border-radius: 8px;
+            color: $color-light-grey;
+            border: 1px solid $color-light-grey;
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 12px;
+
+            &:hover,
+            &:focus {
+                background-color: $color-blue;
+                color: $white;
+                border-color: $color-blue;
+            }
+        }
+    }
+}

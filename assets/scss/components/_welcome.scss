@@ -1,0 +1,103 @@
+/* ============================================================================
+** Welcome Styles
+==============================================================================*/
+
+.welcome {
+    background-color: $white;
+    border-radius: 16px;
+    padding: 3em 0;
+    margin: 0 1em;
+    
+    @include media-breakpoint-up(md) {
+        max-width: 978px;
+        padding: 56px 40px;
+        margin: auto 3em;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin: auto auto;
+    }
+
+    &__content {
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 400px;
+        }
+    }
+
+    &__title {
+        color: $color-blue;
+        font-weight: 600px;
+        margin-bottom: 1em;
+
+        @include media-breakpoint-up(md) {
+            font-size: 34px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 37px;
+        }
+    }
+
+    &__checkbox-label {
+        .custom-control-label {
+            font-size: 13px;
+
+            &::before {
+                top: 0.1rem;
+            }
+        }
+    }
+
+    &__forgot {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    &__divider {
+        margin-bottom: 0;
+        font-family: $font-primary;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+        padding: 25px 0; 
+
+        &::before,
+        &::after {
+            @include media-breakpoint-up(md) {
+                content: '';
+                background-color: $color-light-grey;
+                display: inline-block;
+                height: 1px;
+                position: relative;
+                vertical-align: middle;
+                width: 105px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                width: 174px;
+            }
+        }
+
+        &::before {
+            @include media-breakpoint-up(md) {
+                right: 1.5em;
+            }
+        }
+
+        &::after {
+            @include media-breakpoint-up(md) {
+                left: 1.5em;
+            }
+        }
+    }
+
+    &__sign-up {
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 1em;
+    }
+}

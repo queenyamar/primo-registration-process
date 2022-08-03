@@ -1,0 +1,47 @@
+// ============================================================================
+// Site defaults
+// ============================================================================
+
+// Base font size
+// this will affect all 'rem' and 'em' based units
+// need to be declared in root 'html'
+$base-font: 16px !default;
+$font-size-base: $base-font !default; // fallback for bootstrap variable
+
+// Fonts
+$font-primary: 'Poppins', sans-serif !default;
+$font-secondary: 'Mulish', sans-serif !default;
+
+// Breakpoints - to be used as mixins
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1920px,
+) !default;
+
+// Color Pallete
+// ============================================================================
+// ===============================
+// Base Colors
+// ===============================
+$white: #ffffff;
+$black: #000000;
+
+// ===============================
+// Initial Colors
+// Can be changed colors
+// ===============================
+$color-grey: #2F2F2F !default;
+$color-light-grey: #D2D2D2 !default;
+$color-blue: #376EFF !default;
+$color-light-blue: #EBF0FF !default;
+$color-green: #2BC0A9 !default;
+
+// ===============================
+// Derived Colors
+// Base from initial colors
+// ===============================

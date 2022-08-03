@@ -1,0 +1,44 @@
+/* ============================================================================
+** Register Styles
+==============================================================================*/
+
+.register {
+    background-color: $white;
+    border-radius: 16px;
+    padding: 3em 0;
+    margin: 0 1em;
+    
+    @include media-breakpoint-up(md) {
+        max-width: 978px;
+        padding: 56px 40px;
+        margin: auto 3em;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin: auto auto;
+    }
+
+    &__content {
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 400px;
+        }
+    }
+
+    &__title {
+        color: $color-blue;
+        font-weight: 600px;
+        margin-bottom: 1em;
+
+        @include media-breakpoint-up(md) {
+            font-size: 34px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 37px;
+        }
+    }
+}
